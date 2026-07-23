@@ -60,10 +60,10 @@ public class TestUpload extends HttpServlet implements ServletRequestAware {
     /**
      * Process upload request
      */
-    public void processRequest(HttpServletRequest request)
+    public void ProcessRequest(HttpServletRequest request)
             throws ServletException, IOException {
 
-        String contentType = request.getContentType();
+        //String contentType = request.getContentType();
 
         if (contentType == null ||
                 !contentType.toLowerCase().startsWith("multipart")) {
