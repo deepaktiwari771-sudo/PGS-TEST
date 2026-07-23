@@ -4,7 +4,7 @@ import com.missiondata.fileupload.OutputStreamListener;
 
 public class FileUploadListener implements OutputStreamListener {
 
-    private FileUploadStats FileUploadStats = new FileUploadStats();
+    private FileUploadStats fileUploadStats = new FileUploadStats();
 
     public FileUploadListener(long totalSize) {
         fileUploadStats.setTotalSize(totalSize);
@@ -14,7 +14,7 @@ public class FileUploadListener implements OutputStreamListener {
         fileUploadStats.setCurrentStatus("start");
     }
 
-    public void bytesRead(int byteCount ) {
+    public void bytesRead(int byteCount) {
         fileUploadStats.incrementBytesRead(byteCount);
         fileUploadStats.setCurrentStatus("reading");
     }
