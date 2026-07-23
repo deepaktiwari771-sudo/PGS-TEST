@@ -2,7 +2,7 @@ package com.hp.cks.soar.uploads;
 
 import com.missiondata.fileupload.OutputStreamListener;
 
-public class fileUploadListener implements OutputStreamListener {
+public class FileUploadListener implements OutputStreamListener {
 
     private FileUploadStats fileUploadStats = new FileUploadStats();
 
@@ -14,7 +14,7 @@ public class fileUploadListener implements OutputStreamListener {
         fileUploadStats.setCurrentStatus("start");
     }
 
-    public void bytesRead(int byteCount) {
+    public void bytesRead(int ) {
         fileUploadStats.incrementBytesRead(byteCount);
         fileUploadStats.setCurrentStatus("reading");
     }
