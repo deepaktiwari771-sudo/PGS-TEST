@@ -113,6 +113,7 @@ public class TestUpload extends HttpServlet implements ServletRequestAware {
 
                 // Allowed file types
                 if (!(fileName.endsWith(".pdf")
+                        || fileName.endsWith(".png")
                         || fileName.endsWith(".txt")
                         || fileName.endsWith(".csv")
                         || fileName.endsWith(".xls")
