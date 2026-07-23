@@ -2,7 +2,7 @@ package com.hp.cks.soar.uploads;
 
 import com.missiondata.fileupload.OutputStreamListener;
 
-public class FileUploadListener implements OutputStreamListener {
+public class fileUploadListener implements OutputStreamListener {
 
     private FileUploadStats fileUploadStats = new FileUploadStats();
 
